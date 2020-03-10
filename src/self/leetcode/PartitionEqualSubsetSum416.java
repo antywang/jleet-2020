@@ -23,11 +23,11 @@ public class PartitionEqualSubsetSum416 {
 				}
 			}
 		}
-		return dp[targetSum] > 0;
+		return dp[targetSum] != 0;
 	}
 
 	public static void main(String[] args) throws Exception {
-		int[] testNums = {100, 100, 100};
+		int[] testNums = {1, 5, 11, 5};
 		System.out.println("The test result is:" + canPartition(testNums));
 	}
 }
